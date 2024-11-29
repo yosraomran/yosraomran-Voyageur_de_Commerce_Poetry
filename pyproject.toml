@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tsp-optimisaation"
+version = "0.1.0"
+description = "Solution pour le problème du voyageur de commerce avec contraintes"
+authors = ["Yosra OMRANE"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.*"
+numpy = "^2.1.2"
+pandas = "^2.2.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+flake8 = "^7.1.1"
+sphinx = "^8.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

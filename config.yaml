@@ -1,0 +1,12 @@
+cities:
+  - {name: "CityA", x: 0, y: 0, demand: 10}
+  - {name: "CityB", x: 10, y: 10, demand: 20}
+vehicle:
+  capacity: 100
+constraints:
+  time_windows:
+    CityA: {open: "08:00", close: "17:00"}
+    CityB: {open: "09:00", close: "18:00"}
+  impracticable_routes:
+    - {from: "CityA", to: "CityB"}
+  max_distance_before_rest: 500
